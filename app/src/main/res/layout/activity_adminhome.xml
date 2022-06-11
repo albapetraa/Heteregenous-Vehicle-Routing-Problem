@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Adminhome">
+
+    <Button
+        android:id="@+id/yolcuEkleButton"
+        android:layout_width="212dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:text="Yolcu Sayısını Düzenle"
+        app:layout_constraintEnd_toEndOf="@+id/yolcuText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/yolcuText"
+        app:layout_constraintTop_toBottomOf="@+id/yolcuText" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="205dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/yolcuText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Yolcu Sayısı"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <Button
+        android:id="@+id/rotaHesaplaButton"
+        android:layout_width="318dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="324dp"
+        android:text="Rota Hesapla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yolcuEkleButton" />
+
+    <ListView
+        android:id="@+id/liste"
+        android:layout_width="414dp"
+        android:layout_height="237dp"
+        app:layout_constraintBottom_toTopOf="@+id/rotaHesaplaButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yolcuEkleButton"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <TextView
+        android:id="@+id/ekstraMaliyet"
+        android:layout_width="294dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Kiralanan araç maliyeti(25 Birim): "
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rotaHesaplaButton"
+        app:layout_constraintEnd_toEndOf="@+id/rotaHesaplaButton"
+        app:layout_constraintStart_toStartOf="@+id/rotaHesaplaButton"
+        app:layout_constraintTop_toBottomOf="@+id/liste"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/maliyet"
+        android:layout_width="287dp"
+        android:layout_height="20dp"
+        android:text="Toplam Maliyet: "
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ekstraMaliyet"
+        app:layout_constraintEnd_toEndOf="@+id/ekstraMaliyet"
+        app:layout_constraintStart_toStartOf="@+id/ekstraMaliyet"
+        app:layout_constraintTop_toBottomOf="@+id/liste" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

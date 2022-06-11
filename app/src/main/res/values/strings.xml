@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AppSon2</string>
+    <string name="tab_text_1">Giriş Yap</string>
+    <string name="tab_text_2">Kayıt Ol</string>
+    <string name="tab_text_3">Admin Girişi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="duraklar_array">
+        <item>Başiskele</item>
+        <item>Çayırova</item>
+        <item>Darıca</item>
+        <item>Derince</item>
+        <item>Dilovası</item>
+        <item>Gebze</item>
+        <item>Gölcük</item>
+        <item>Kandıra</item>
+        <item>Karamürsel</item>
+        <item>Kartepe</item>
+        <item>Körfez</item>
+        <item>İzmit</item>
+
+    </string-array>
+
+</resources>
